@@ -24,6 +24,7 @@
 		0A241C271F19F088001D3F79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A241C251F19F088001D3F79 /* LaunchScreen.storyboard */; };
 		0A78FAFD1F1B23BB00D30E22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A78FAFC1F1B23BB00D30E22 /* GoogleService-Info.plist */; };
 		0A78FAFF1F1B591C00D30E22 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78FAFE1F1B591C00D30E22 /* RegisterViewController.swift */; };
+		0A78FB071F1B96B500D30E22 /* MissingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78FB061F1B96B500D30E22 /* MissingProfileViewController.swift */; };
 		0ADE6B8E1F1B0A6600E15B58 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE6B8A1F1B0A6500E15B58 /* Photo.swift */; };
 		0ADE6B901F1B0A6600E15B58 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE6B8C1F1B0A6500E15B58 /* Child.swift */; };
 		A75EC428C344E00503945D73 /* Pods_Stay_Safe_Jamaica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6965A82A2B970527B84FC99 /* Pods_Stay_Safe_Jamaica.framework */; };
@@ -54,6 +55,7 @@
 		0A241C261F19F088001D3F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A78FAFC1F1B23BB00D30E22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A78FAFE1F1B591C00D30E22 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../../../../../Downloads/RegisterViewController.swift; sourceTree = "<group>"; };
+		0A78FB061F1B96B500D30E22 /* MissingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingProfileViewController.swift; sourceTree = "<group>"; };
 		0ADE6B8A1F1B0A6500E15B58 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		0ADE6B8C1F1B0A6500E15B58 /* Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
 		302AF85AEA22D80978AE32CC /* Pods-Stay Safe Jamaica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stay Safe Jamaica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stay Safe Jamaica/Pods-Stay Safe Jamaica.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		0A0B8D3F1F1AE8DE00DC8D23 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0A78FB051F1B969E00D30E22 /* profile */,
 				0A0B8D501F1AF7C300DC8D23 /* Missing Children */,
 				0A0B8D491F1AEC1500DC8D23 /* Crime Report */,
 				0A0B8D481F1AEC0700DC8D23 /* Login */,
@@ -223,6 +226,14 @@
 				0A0B8D401F1AE8E500DC8D23 /* Supporting files */,
 			);
 			path = "Stay Safe Jamaica";
+			sourceTree = "<group>";
+		};
+		0A78FB051F1B969E00D30E22 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				0A78FB061F1B96B500D30E22 /* MissingProfileViewController.swift */,
+			);
+			path = profile;
 			sourceTree = "<group>";
 		};
 		4E4F8A363F5DFB0E266B9712 /* Pods */ = {
@@ -372,6 +383,7 @@
 				0A0B8D361F1A95B700DC8D23 /* Utils.swift in Sources */,
 				0ADE6B901F1B0A6600E15B58 /* Child.swift in Sources */,
 				0A0B8D4F1F1AF29300DC8D23 /* UIView+Utils.swift in Sources */,
+				0A78FB071F1B96B500D30E22 /* MissingProfileViewController.swift in Sources */,
 				0A0B8D341F1A8E2E00DC8D23 /* CrimeReportViewController+KeyboardUtils.swift in Sources */,
 				0A0B8D381F1A99B900DC8D23 /* UIViewController+Utils.swift in Sources */,
 				0A0B8D581F1AFA2A00DC8D23 /* MissingChildrenViewController+UITableViewDelegate.swift in Sources */,

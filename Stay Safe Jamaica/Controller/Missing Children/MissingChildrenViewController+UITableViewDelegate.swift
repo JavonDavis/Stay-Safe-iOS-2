@@ -12,5 +12,6 @@ import UIKit
 extension MissingChildrenViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "profile", sender: nil)
     }
 }
