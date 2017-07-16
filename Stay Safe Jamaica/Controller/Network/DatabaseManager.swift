@@ -54,7 +54,7 @@ class DatabaseManager {
         httpManager.get(url: serverUrl, completion: { response  in
             
             if let results = response.result.value as? [String: Any] {
-                
+                print(results)
                 self.reports = Report.buildReports(results)
                 
                 completion(nil)

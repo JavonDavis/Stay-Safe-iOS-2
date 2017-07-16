@@ -63,7 +63,8 @@ class CrimeReportMapViewController: UIViewController
         }
         
         // When the array is complete, we add the annotations to the map.
-        crimeReportMapView.addAnnotations(annotations)
+        self.crimeReportMapView.addAnnotations(self.annotations)
+        
     }
     
     func setupMapView()

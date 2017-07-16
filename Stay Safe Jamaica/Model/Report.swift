@@ -46,9 +46,9 @@ struct Report {
         for (key, value) in reportObjects {
             
             if let object = value as? [String: Any] {
-                if let location = object["location"] as? [String:Double] {
+                if let location = object["location"] as? [String:String] {
                     
-                    var reportObject = Report(category: object["category"] as? String, description: object["description"] as? String, lat: location["lat"]!, long: location["long"]!)
+                    var reportObject = Report(category: object["category"] as? String, description: object["description"] as? String, lat: Double(location["lat"]!), long: Double(location["long"]!))
                     reportObject.id = key
                     
                     reportArray.append(reportObject)
