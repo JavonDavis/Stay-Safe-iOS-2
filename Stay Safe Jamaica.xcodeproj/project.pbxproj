@@ -32,6 +32,9 @@
 		EB61C1021F1A839500625116 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB61C1011F1A839500625116 /* HttpManager.swift */; };
 		EB61C1041F1A840F00625116 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB61C1031F1A840F00625116 /* DatabaseManager.swift */; };
 		F3190A311F1A9DC600C172BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3190A301F1A9DC600C172BA /* LoginViewController.swift */; };
+		F3190A3A1F1B293D00C172BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3190A381F1B293D00C172BA /* LoginViewController.swift */; };
+		F3190A3B1F1B293D00C172BA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3190A391F1B293D00C172BA /* RegisterViewController.swift */; };
+		F3190A3F1F1B29B800C172BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3190A3E1F1B29B800C172BA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		EB61C1011F1A839500625116 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		EB61C1031F1A840F00625116 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		F3190A301F1A9DC600C172BA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F3190A381F1B293D00C172BA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../../../../../../Downloads/LoginViewController.swift; sourceTree = "<group>"; };
+		F3190A391F1B293D00C172BA /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../../../../../../../../Downloads/RegisterViewController.swift; sourceTree = "<group>"; };
+		F3190A3E1F1B29B800C172BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				0A78FAFC1F1B23BB00D30E22 /* GoogleService-Info.plist */,
+				F3190A3E1F1B29B800C172BA /* GoogleService-Info.plist */,
 				0A241C281F19F088001D3F79 /* Info.plist */,
 			);
 			path = "Supporting files";
@@ -161,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				0A241C1E1F19F088001D3F79 /* CrimeReportMapViewController.swift */,
+				F3190A381F1B293D00C172BA /* LoginViewController.swift */,
+				F3190A391F1B293D00C172BA /* RegisterViewController.swift */,
 			);
 			path = CrimeMap;
 			sourceTree = "<group>";
@@ -309,6 +318,7 @@
 				0A241C241F19F088001D3F79 /* Assets.xcassets in Resources */,
 				0A241C221F19F088001D3F79 /* Main.storyboard in Resources */,
 				0A78FAFD1F1B23BB00D30E22 /* GoogleService-Info.plist in Resources */,
+				F3190A3F1F1B29B800C172BA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +385,8 @@
 				0A0B8D381F1A99B900DC8D23 /* UIViewController+Utils.swift in Sources */,
 				0A0B8D581F1AFA2A00DC8D23 /* MissingChildrenViewController+UITableViewDelegate.swift in Sources */,
 				EB61C0F01F1A462000625116 /* CrimeReportViewController.swift in Sources */,
+				F3190A3A1F1B293D00C172BA /* LoginViewController.swift in Sources */,
+				F3190A3B1F1B293D00C172BA /* RegisterViewController.swift in Sources */,
 				0A0B8D4C1F1AF17900DC8D23 /* MissingChildrenTableViewCell.swift in Sources */,
 				0A0B8D461F1AE95D00DC8D23 /* Report.swift in Sources */,
 				0ADE6B8E1F1B0A6600E15B58 /* Photo.swift in Sources */,
