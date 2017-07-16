@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0Yw-n0-lms">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Crime Report View Controller-->
+        <scene sceneID="pyb-LI-rDV">
+            <objects>
+                <viewController id="sYM-IY-yNm" customClass="CrimeReportViewController" customModule="Stay_Safe_Jamaica" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kU5-ik-M1X"/>
+                        <viewControllerLayoutGuide type="bottom" id="wJ6-z4-zhv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Epm-UO-gsc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bah-MX-25n">
+                                <rect key="frame" x="0.0" y="5" width="375" height="433"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="AjN-MK-2aG">
+                                        <rect key="frame" x="37.5" y="63" width="300" height="307"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Crime Are You Reporting?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51d-Hb-i5k">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="LFv-i7-H7H"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-U7-Tem">
+                                                <rect key="frame" x="0.0" y="68" width="300" height="239"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="W6h-Ec-vMn">
+                                                        <rect key="frame" x="4" y="0.0" width="292" height="99.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TCd-bk-H2C">
+                                                                <rect key="frame" x="0.0" y="0.0" width="74" height="99.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy5-H9-Ndq" userLabel="Shooting Button">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
+                                                                        <state key="normal" image="Shooting-Unselected"/>
+                                                                        <state key="selected" image="Shooting"/>
+                                                                        <connections>
+                                                                            <action selector="selectReportCategory:" destination="sYM-IY-yNm" eventType="touchUpInside" id="gsN-NJ-jkz"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shooting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msl-Sh-bmU">
+                                                                        <rect key="frame" x="0.0" y="79" width="74" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="reV-vJ-gKP">
+                                                                <rect key="frame" x="109" y="0.0" width="74" height="99.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fof-Yb-MLa" userLabel="Theft Button">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
+                                                                        <state key="normal" image="Theft-Unselected"/>
+                                                                        <state key="selected" image="Theft "/>
+                                                                        <connections>
+                                                                            <action selector="selectReportCategory:" destination="sYM-IY-yNm" eventType="touchUpInside" id="ejH-ck-qO0"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRy-q2-q1G">
+                                                                        <rect key="frame" x="0.0" y="79" width="74" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zai-vU-cEL">
+                                                                <rect key="frame" x="218" y="0.0" width="74" height="99.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsw-xp-pGy" userLabel="Accident Button">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
+                                                                        <state key="normal" image="Accident-Unselected"/>
+                                                                        <state key="selected" image="Accident"/>
+                                                                        <connections>
+                                                                            <action selector="selectReportCategory:" destination="sYM-IY-yNm" eventType="touchUpInside" id="afC-uo-3ho"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accident" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mf-YR-wtQ">
+                                                                        <rect key="frame" x="0.0" y="79" width="74" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="EsP-Ss-Do5">
+                                                        <rect key="frame" x="30.5" y="139.5" width="239.5" height="99.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xuv-gj-fFw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="111" height="99.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYt-Ml-tcn" userLabel="Sexual Assault Button">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="74"/>
+                                                                        <state key="normal" image="Sexual Assault-Unselected"/>
+                                                                        <state key="selected" image="Sexual Assault "/>
+                                                                        <connections>
+                                                                            <action selector="selectReportCategory:" destination="sYM-IY-yNm" eventType="touchUpInside" id="tIt-3D-bM1"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexual Assault" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ay3-Jd-Esm">
+                                                                        <rect key="frame" x="0.0" y="79" width="111" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bac-Ih-ZJK">
+                                                                <rect key="frame" x="146" y="0.0" width="93.5" height="99.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8x-oP-YlL" userLabel="Other Button">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="74"/>
+                                                                        <state key="normal" image="Other Crime-Unselected"/>
+                                                                        <state key="selected" image="Other Crime"/>
+                                                                        <connections>
+                                                                            <action selector="selectReportCategory:" destination="sYM-IY-yNm" eventType="touchUpInside" id="o09-Jo-1NR"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Crime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtJ-AC-0di">
+                                                                        <rect key="frame" x="0.0" y="79" width="93.5" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.70196078429999997" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="AjN-MK-2aG" firstAttribute="centerY" secondItem="bah-MX-25n" secondAttribute="centerY" id="EQJ-wZ-ihT"/>
+                                    <constraint firstItem="AjN-MK-2aG" firstAttribute="centerX" secondItem="bah-MX-25n" secondAttribute="centerX" id="MVZ-dJ-4A8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's Happening?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yu-HG-SIl">
+                                <rect key="frame" x="94" y="463" width="187.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.25098039220000001" green="0.70196078429999997" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z8J-35-zpz">
+                                <rect key="frame" x="67" y="514.5" width="240" height="75"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="asw-KY-PTI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klb-ge-lGe">
+                                <rect key="frame" x="112" y="614.5" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.70196078429999997" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="6Xg-RL-Fag"/>
+                                    <constraint firstAttribute="height" constant="40" id="Jpy-gI-H37"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Report">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitReport:" destination="sYM-IY-yNm" eventType="touchUpInside" id="QQb-O9-8xm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bah-MX-25n" secondAttribute="trailing" id="4h5-48-emJ"/>
+                            <constraint firstItem="bah-MX-25n" firstAttribute="leading" secondItem="Epm-UO-gsc" secondAttribute="leading" id="6y9-LT-2f6"/>
+                            <constraint firstItem="z8J-35-zpz" firstAttribute="centerX" secondItem="9yu-HG-SIl" secondAttribute="centerX" id="92D-Tf-0ET"/>
+                            <constraint firstAttribute="bottom" secondItem="bah-MX-25n" secondAttribute="bottom" constant="229" id="E8v-N4-wn5"/>
+                            <constraint firstItem="klb-ge-lGe" firstAttribute="top" secondItem="z8J-35-zpz" secondAttribute="bottom" constant="25" id="JJz-4I-D2b"/>
+                            <constraint firstItem="klb-ge-lGe" firstAttribute="top" secondItem="z8J-35-zpz" secondAttribute="bottom" constant="25" id="Ogy-qc-7W0"/>
+                            <constraint firstItem="9yu-HG-SIl" firstAttribute="top" secondItem="bah-MX-25n" secondAttribute="bottom" constant="25" id="azn-l7-UgC"/>
+                            <constraint firstItem="bah-MX-25n" firstAttribute="top" secondItem="Epm-UO-gsc" secondAttribute="topMargin" constant="-15" id="ehC-50-RDC"/>
+                            <constraint firstItem="klb-ge-lGe" firstAttribute="centerX" secondItem="bah-MX-25n" secondAttribute="centerX" id="iyg-nA-f26"/>
+                            <constraint firstItem="z8J-35-zpz" firstAttribute="leading" secondItem="Epm-UO-gsc" secondAttribute="leadingMargin" constant="51" id="vWJ-0p-lYl"/>
+                            <constraint firstItem="z8J-35-zpz" firstAttribute="top" secondItem="9yu-HG-SIl" secondAttribute="bottom" constant="25" id="xTq-fb-nmC"/>
+                            <constraint firstItem="9yu-HG-SIl" firstAttribute="centerX" secondItem="bah-MX-25n" secondAttribute="centerX" id="zgp-qz-7wT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Y7-Ez-9hP"/>
+                    <connections>
+                        <outlet property="crimeDescriptionTextView" destination="z8J-35-zpz" id="aVf-yL-FhY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TwR-zm-eRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2020" y="103"/>
+        </scene>
+        <!--Crime Report Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CrimeReportMapViewController" customModule="Stay_Safe_Jamaica" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rXp-tA-p31">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MS2-dQ-dhD">
+                                <rect key="frame" x="283.5" y="49" width="54.5" height="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <color key="textColor" red="0.16862745098039217" green="0.71372549019607845" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYq-7B-hFw">
+                                <rect key="frame" x="302" y="594" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="jI7-Ux-6qE"/>
+                                </constraints>
+                                <state key="normal" image="Add Crime"/>
+                                <connections>
+                                    <action selector="newCrimeReport:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kgV-AM-kAG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xg8-Tm-JH8">
+                                <rect key="frame" x="302" y="541" width="52" height="52"/>
+                                <state key="normal" image="User Location"/>
+                                <connections>
+                                    <action selector="refreshUserLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tg2-NL-ZMq"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="YEP-9f-AY4">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                                <color key="color" red="0.25098039220000001" green="0.70196078429999997" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="MS2-dQ-dhD" secondAttribute="trailing" constant="21" id="D0e-wF-e7q"/>
+                            <constraint firstItem="MS2-dQ-dhD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="D4h-CU-EtO"/>
+                            <constraint firstItem="IYq-7B-hFw" firstAttribute="top" secondItem="xg8-Tm-JH8" secondAttribute="bottom" constant="1" id="DvO-47-6Wc"/>
+                            <constraint firstItem="YEP-9f-AY4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KaW-Ui-Xns"/>
+                            <constraint firstItem="rXp-tA-p31" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Oc6-8k-BTg"/>
+                            <constraint firstAttribute="trailing" secondItem="rXp-tA-p31" secondAttribute="trailing" id="QoW-4W-hep"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rXp-tA-p31" secondAttribute="bottom" id="Tf8-C1-AhR"/>
+                            <constraint firstItem="xg8-Tm-JH8" firstAttribute="leading" secondItem="rXp-tA-p31" secondAttribute="trailing" constant="-73" id="WGB-DF-3pi"/>
+                            <constraint firstAttribute="trailing" secondItem="IYq-7B-hFw" secondAttribute="trailing" constant="21" id="p04-ta-BoE"/>
+                            <constraint firstItem="rXp-tA-p31" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sAX-Kr-J6H"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IYq-7B-hFw" secondAttribute="bottom" constant="21" id="tBS-He-sqs"/>
+                            <constraint firstItem="YEP-9f-AY4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wEV-fJ-YV7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="V6y-ic-eTM"/>
+                    <connections>
+                        <outlet property="crimeReportMapView" destination="rXp-tA-p31" id="Etu-Zt-Zef"/>
+                        <outlet property="loadingIndicator" destination="YEP-9f-AY4" id="OXZ-rQ-ixT"/>
+                        <segue destination="sYM-IY-yNm" kind="show" identifier="showCrimeReportViewController" id="Ddh-C8-VjA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1138" y="103"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5uF-qJ-LfJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="0Yw-n0-lms" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qfa-Bj-ddh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4HR-kf-9r1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3f-Sf-Tfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="103"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="cOG-6j-IcI">
+            <objects>
+                <viewController id="iwG-k6-aZU" customClass="LoginViewController" customModule="Stay_Safe_Jamaica" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uFS-N5-vxY"/>
+                        <viewControllerLayoutGuide type="bottom" id="wQr-xg-SMW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YGi-wA-Y16">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jamaican School Kids" translatesAutoresizingMaskIntoConstraints="NO" id="YRi-qg-xs8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.16862745100000001" green="0.71372549019999998" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7PR-jL-SjB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.71372549019999998" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ESB-kH-jk8">
+                                <rect key="frame" x="16" y="251.5" width="343" height="164"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6wY-fh-GG4">
+                                        <rect key="frame" x="21.5" y="0.0" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="XML-SH-Ttq"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bmi-32-wV9">
+                                        <rect key="frame" x="21.5" y="45" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="oDw-vm-gRh"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGG-sc-MOe">
+                                        <rect key="frame" x="106.5" y="90" width="130" height="30"/>
+                                        <color key="backgroundColor" red="0.12549019607843137" green="0.52156862745098043" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="PLc-bm-vmq"/>
+                                            <constraint firstAttribute="width" constant="130" id="d5i-0E-B2H"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.16862745100000001" green="0.71372549019999998" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="login:" destination="iwG-k6-aZU" eventType="touchUpInside" id="A8q-YY-PV7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sns-DL-JSR">
+                                        <rect key="frame" x="67.5" y="135" width="208" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Don't have an account? Sign up.">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signup:" destination="iwG-k6-aZU" eventType="touchUpInside" id="ZfV-RU-Ung"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0jV-RI-h0V">
+                                <rect key="frame" x="112" y="112" width="150" height="100.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Agy-hd-GHc">
+                                        <rect key="frame" x="35" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="5gp-VV-Zm6"/>
+                                            <constraint firstAttribute="height" constant="80" id="AqZ-8V-OPa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay Safe Jamaica" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qf-Ck-0BB">
+                                        <rect key="frame" x="0.0" y="80" width="150" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7PR-jL-SjB" firstAttribute="leading" secondItem="YGi-wA-Y16" secondAttribute="leading" id="4rn-9b-65J"/>
+                            <constraint firstItem="ESB-kH-jk8" firstAttribute="leading" secondItem="YGi-wA-Y16" secondAttribute="leadingMargin" id="6fW-dl-3oN"/>
+                            <constraint firstItem="0jV-RI-h0V" firstAttribute="centerX" secondItem="YGi-wA-Y16" secondAttribute="centerX" id="Aau-k7-8ag"/>
+                            <constraint firstItem="ESB-kH-jk8" firstAttribute="top" secondItem="0jV-RI-h0V" secondAttribute="bottom" constant="39" id="EOu-qR-F5P"/>
+                            <constraint firstItem="wQr-xg-SMW" firstAttribute="top" secondItem="7PR-jL-SjB" secondAttribute="bottom" id="Ow8-Sg-yrc"/>
+                            <constraint firstAttribute="trailing" secondItem="7PR-jL-SjB" secondAttribute="trailing" id="YJc-KZ-gWX"/>
+                            <constraint firstItem="ESB-kH-jk8" firstAttribute="centerY" secondItem="YGi-wA-Y16" secondAttribute="centerY" id="ZZ4-pg-Ix3"/>
+                            <constraint firstItem="7PR-jL-SjB" firstAttribute="top" secondItem="YGi-wA-Y16" secondAttribute="top" id="gwg-zU-OMp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ESB-kH-jk8" secondAttribute="trailing" id="iiB-Gg-ukf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userEmailAddress" destination="6wY-fh-GG4" id="HsH-yS-wdm"/>
+                        <outlet property="userPassword" destination="bmi-32-wV9" id="Mj6-5X-8R7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFc-Xt-7LC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="854.1229385307347"/>
+        </scene>
+        <!--Missing Children View Controller-->
+        <scene sceneID="2fM-Rr-5T0">
+            <objects>
+                <viewController id="hvU-Ef-Mz2" customClass="MissingChildrenViewController" customModule="Stay_Safe_Jamaica" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bhw-NA-dh3"/>
+                        <viewControllerLayoutGuide type="bottom" id="NsF-W9-bzZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QOj-jm-fIV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HLw-cc-nbd">
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HLw-cc-nbd" firstAttribute="leading" secondItem="QOj-jm-fIV" secondAttribute="leading" id="ERe-8A-eca"/>
+                            <constraint firstAttribute="trailing" secondItem="HLw-cc-nbd" secondAttribute="trailing" id="KjM-UT-csJ"/>
+                            <constraint firstItem="NsF-W9-bzZ" firstAttribute="top" secondItem="HLw-cc-nbd" secondAttribute="bottom" id="Qqi-RM-M4D"/>
+                            <constraint firstItem="HLw-cc-nbd" firstAttribute="top" secondItem="Bhw-NA-dh3" secondAttribute="bottom" constant="8" id="uuG-AL-MG0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="missingChildrenTableView" destination="HLw-cc-nbd" id="9pd-Zh-FD8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnp-GL-zsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136.8" y="854.1229385307347"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Accident" width="74" height="74"/>
+        <image name="Accident-Unselected" width="74" height="74"/>
+        <image name="Add Crime" width="52" height="52"/>
+        <image name="Jamaican School Kids" width="1050" height="701"/>
+        <image name="Logo" width="80" height="80"/>
+        <image name="Other Crime" width="74" height="74"/>
+        <image name="Other Crime-Unselected" width="74" height="74"/>
+        <image name="Sexual Assault " width="74" height="74"/>
+        <image name="Sexual Assault-Unselected" width="74" height="74"/>
+        <image name="Shooting" width="74" height="74"/>
+        <image name="Shooting-Unselected" width="74" height="74"/>
+        <image name="Theft " width="74" height="74"/>
+        <image name="Theft-Unselected" width="74" height="74"/>
+        <image name="User Location" width="52" height="52"/>
+    </resources>
+</document>

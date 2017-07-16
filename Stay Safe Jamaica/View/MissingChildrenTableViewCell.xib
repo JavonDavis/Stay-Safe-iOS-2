@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="missingChildTableViewCell" rowHeight="98" id="KGk-i7-Jjw" customClass="MissingChildrenTableViewCell" customModule="Stay_Safe_Jamaica" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WYe-1v-Unw">
+                        <rect key="frame" x="8" y="8" width="304" height="82"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fLk-hN-L7p" userLabel="Profile image">
+                                <rect key="frame" x="0.0" y="1" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Uf7-fL-SIm"/>
+                                    <constraint firstAttribute="height" constant="80" id="hvs-Mb-Hp6"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0uQ-f2-diP">
+                                <rect key="frame" x="85" y="12" width="219" height="58.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firstname Lastname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qw-g8-JJp" userLabel="Name Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="219" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99 years old" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELP-Sd-DGQ" userLabel="Age Label">
+                                        <rect key="frame" x="0.0" y="24.5" width="219" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last seen x time ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKP-JH-AG2" userLabel="Last Seen Label">
+                                        <rect key="frame" x="0.0" y="46.5" width="219" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WYe-1v-Unw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="C1B-mL-x5E"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WYe-1v-Unw" secondAttribute="trailing" id="EgQ-Mu-Wff"/>
+                    <constraint firstItem="WYe-1v-Unw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="G0x-4h-9fH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WYe-1v-Unw" secondAttribute="bottom" id="UOb-55-zit"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="childAgeLabel" destination="ELP-Sd-DGQ" id="3Kt-pZ-8cX"/>
+                <outlet property="childImageView" destination="fLk-hN-L7p" id="AH2-AK-vTH"/>
+                <outlet property="childLastSeenLabel" destination="UKP-JH-AG2" id="OeR-e7-3ts"/>
+                <outlet property="childNameLabel" destination="9Qw-g8-JJp" id="jRG-zx-1ZY"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="27"/>
+        </tableViewCell>
+    </objects>
+</document>
