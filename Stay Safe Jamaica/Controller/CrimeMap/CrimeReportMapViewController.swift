@@ -29,13 +29,18 @@ class CrimeReportMapViewController: UIViewController
         setup()
         
         databaseManager.loadReports(completion: { error in
+            performUIUpdatesOnMain {
+                self.loadingIndicator.stopAnimating()
+            }
             guard error == nil else {
                 print("No reports")
                 print(error?.localizedDescription)
                 return
             }
             
+            
             print("\(self.databaseManager.reports.count) reports")
+            self.updateMap()
         })
     }
     
@@ -49,7 +54,7 @@ class CrimeReportMapViewController: UIViewController
     }
     
     func updateMap() {
-        loadingIndicator.stopAnimating()
+        
         crimeReportMapView.removeAnnotations(annotations)
         annotations = [MKPointAnnotation]()
         for crimeReport in databaseManager.reports {
