@@ -8,6 +8,8 @@
 
 import UIKit
 import MapKit
+import FirebaseDatabase
+import FirebaseStorage
 
 class CrimeReportMapViewController: UIViewController
 {
@@ -17,6 +19,11 @@ class CrimeReportMapViewController: UIViewController
     var locationManager = CLLocationManager()
     var userRegion: MKCoordinateRegion?
     var annotations = [MKPointAnnotation]()
+    
+    var ref: DatabaseReference!
+    var storageRef:StorageReference!
+    var children = [Child]()
+    
     
     let databaseManager = DatabaseManager.shared
     
@@ -28,18 +35,16 @@ class CrimeReportMapViewController: UIViewController
         
         setup()
         
-        databaseManager.loadReports(completion: { error in
-            performUIUpdatesOnMain {
-                self.loadingIndicator.stopAnimating()
-            }
-            guard error == nil else {
-                print("No reports")
-                print(error?.localizedDescription)
-                return
-            }
+        ref = Database.database().reference()
+        
+        let storage = Storage.storage()
+        storageRef = storage.reference()
+        
+        ref.child("children").observe(.value, with: { snapshot in
+            let childrenArray = snapshot.value as? [String : AnyObject] ?? [:]
+            print(childrenArray)
             
-            
-            print("\(self.databaseManager.reports.count) reports")
+            self.children = Child.buildChildren(childrenArray)
             self.updateMap()
         })
     }
@@ -54,12 +59,15 @@ class CrimeReportMapViewController: UIViewController
     }
     
     func updateMap() {
-        
+        loadingIndicator.stopAnimating()
         crimeReportMapView.removeAnnotations(annotations)
         annotations = [MKPointAnnotation]()
-        for crimeReport in databaseManager.reports {
-            let coordinate = getCoordinate(latitude: crimeReport.lat!, longitude: crimeReport.lon!)
-            annotations.append(getAnnotationFromCoordinate(coordinate: coordinate))
+        for child in children {
+            if let lat = child.lat, let lon = child.lon {
+                let coordinate = getCoordinate(latitude: lat, longitude: lon)
+                annotations.append(getAnnotationFromCoordinate(coordinate: coordinate))
+            }
+            
         }
         
         // When the array is complete, we add the annotations to the map.
@@ -95,8 +103,8 @@ class CrimeReportMapViewController: UIViewController
     
     func focus(mapView: MKMapView, location: CLLocationCoordinate2D)
     {
-        let latitude = CLLocationDegrees(18.1096)
-        let longitude = CLLocationDegrees(-77.2975)
+        let latitude = CLLocationDegrees(location.latitude)
+        let longitude = CLLocationDegrees(location.longitude)
         let latDelta: CLLocationDegrees = 0.3
         let lonDelta: CLLocationDegrees = 0.3
         let span: MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)

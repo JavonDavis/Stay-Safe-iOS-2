@@ -10,7 +10,7 @@ data = r.text
 
 soup = BeautifulSoup(data)
 
-for link in soup.select('td.listing_header'):
+for link in soup.select('#main'):
     print(link)
 # for link in soup.find_all('a'):
 #     print(link.get('href'))

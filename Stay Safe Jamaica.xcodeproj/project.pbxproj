@@ -23,6 +23,7 @@
 		0A241C241F19F088001D3F79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A241C231F19F088001D3F79 /* Assets.xcassets */; };
 		0A241C271F19F088001D3F79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A241C251F19F088001D3F79 /* LaunchScreen.storyboard */; };
 		0A78FAFD1F1B23BB00D30E22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A78FAFC1F1B23BB00D30E22 /* GoogleService-Info.plist */; };
+		0A78FAFF1F1B591C00D30E22 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78FAFE1F1B591C00D30E22 /* RegisterViewController.swift */; };
 		0ADE6B8E1F1B0A6600E15B58 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE6B8A1F1B0A6500E15B58 /* Photo.swift */; };
 		0ADE6B901F1B0A6600E15B58 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE6B8C1F1B0A6500E15B58 /* Child.swift */; };
 		A75EC428C344E00503945D73 /* Pods_Stay_Safe_Jamaica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6965A82A2B970527B84FC99 /* Pods_Stay_Safe_Jamaica.framework */; };
@@ -31,9 +32,7 @@
 		EB61C1021F1A839500625116 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB61C1011F1A839500625116 /* HttpManager.swift */; };
 		EB61C1041F1A840F00625116 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB61C1031F1A840F00625116 /* DatabaseManager.swift */; };
 		F3190A311F1A9DC600C172BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3190A301F1A9DC600C172BA /* LoginViewController.swift */; };
-		F3190A3A1F1B293D00C172BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3190A381F1B293D00C172BA /* LoginViewController.swift */; };
-		F3190A3B1F1B293D00C172BA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3190A391F1B293D00C172BA /* RegisterViewController.swift */; };
-		F3190A3F1F1B29B800C172BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3190A3E1F1B29B800C172BA /* GoogleService-Info.plist */; };
+		F3190A3B1F1B293D00C172BA /*  in Sources */ = {isa = PBXBuildFile; fileRef = F3190A391F1B293D00C172BA /*  */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +52,8 @@
 		0A241C211F19F088001D3F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A241C231F19F088001D3F79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A241C261F19F088001D3F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0A241C281F19F088001D3F79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A78FAFC1F1B23BB00D30E22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A78FAFE1F1B591C00D30E22 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../../../../../Downloads/RegisterViewController.swift; sourceTree = "<group>"; };
 		0ADE6B8A1F1B0A6500E15B58 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		0ADE6B8C1F1B0A6500E15B58 /* Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
 		302AF85AEA22D80978AE32CC /* Pods-Stay Safe Jamaica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stay Safe Jamaica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stay Safe Jamaica/Pods-Stay Safe Jamaica.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,9 +64,7 @@
 		EB61C1011F1A839500625116 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		EB61C1031F1A840F00625116 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		F3190A301F1A9DC600C172BA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F3190A381F1B293D00C172BA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../../../../../../Downloads/LoginViewController.swift; sourceTree = "<group>"; };
-		F3190A391F1B293D00C172BA /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../../../../../../../../Downloads/RegisterViewController.swift; sourceTree = "<group>"; };
-		F3190A3E1F1B29B800C172BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3190A391F1B293D00C172BA /*  */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = ""; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				0A78FAFC1F1B23BB00D30E22 /* GoogleService-Info.plist */,
-				F3190A3E1F1B29B800C172BA /* GoogleService-Info.plist */,
-				0A241C281F19F088001D3F79 /* Info.plist */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -165,8 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				0A241C1E1F19F088001D3F79 /* CrimeReportMapViewController.swift */,
-				F3190A381F1B293D00C172BA /* LoginViewController.swift */,
-				F3190A391F1B293D00C172BA /* RegisterViewController.swift */,
+				F3190A391F1B293D00C172BA /*  */,
 			);
 			path = CrimeMap;
 			sourceTree = "<group>";
@@ -175,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				F3190A301F1A9DC600C172BA /* LoginViewController.swift */,
+				0A78FAFE1F1B591C00D30E22 /* RegisterViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -314,7 +309,6 @@
 				0A241C241F19F088001D3F79 /* Assets.xcassets in Resources */,
 				0A241C221F19F088001D3F79 /* Main.storyboard in Resources */,
 				0A78FAFD1F1B23BB00D30E22 /* GoogleService-Info.plist in Resources */,
-				F3190A3F1F1B29B800C172BA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3190A311F1A9DC600C172BA /* LoginViewController.swift in Sources */,
+				0A78FAFF1F1B591C00D30E22 /* RegisterViewController.swift in Sources */,
 				0A0B8D361F1A95B700DC8D23 /* Utils.swift in Sources */,
 				0ADE6B901F1B0A6600E15B58 /* Child.swift in Sources */,
 				0A0B8D4F1F1AF29300DC8D23 /* UIView+Utils.swift in Sources */,
@@ -381,8 +376,7 @@
 				0A0B8D381F1A99B900DC8D23 /* UIViewController+Utils.swift in Sources */,
 				0A0B8D581F1AFA2A00DC8D23 /* MissingChildrenViewController+UITableViewDelegate.swift in Sources */,
 				EB61C0F01F1A462000625116 /* CrimeReportViewController.swift in Sources */,
-				F3190A3A1F1B293D00C172BA /* LoginViewController.swift in Sources */,
-				F3190A3B1F1B293D00C172BA /* RegisterViewController.swift in Sources */,
+				F3190A3B1F1B293D00C172BA /*  in Sources */,
 				0A0B8D4C1F1AF17900DC8D23 /* MissingChildrenTableViewCell.swift in Sources */,
 				0A0B8D461F1AE95D00DC8D23 /* Report.swift in Sources */,
 				0ADE6B8E1F1B0A6600E15B58 /* Photo.swift in Sources */,
