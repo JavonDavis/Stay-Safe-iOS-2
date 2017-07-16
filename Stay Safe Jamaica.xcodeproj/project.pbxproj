@@ -13,7 +13,6 @@
 		0A0B8D3A1F1ABADA00DC8D23 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B8D391F1ABADA00DC8D23 /* GCDBlackBox.swift */; };
 		0A0B8D461F1AE95D00DC8D23 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B8D451F1AE95D00DC8D23 /* Report.swift */; };
 		0A0B8D4C1F1AF17900DC8D23 /* MissingChildrenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B8D4A1F1AF17900DC8D23 /* MissingChildrenTableViewCell.swift */; };
-		0A0B8D4D1F1AF17900DC8D23 /* MissingChildrenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B8D4B1F1AF17900DC8D23 /* MissingChildrenTableViewCell.xib */; };
 		0A0B8D4F1F1AF29300DC8D23 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B8D4E1F1AF29300DC8D23 /* UIView+Utils.swift */; };
 		0A0B8D541F1AF9CF00DC8D23 /* MissingChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B8D531F1AF9CE00DC8D23 /* MissingChildrenViewController.swift */; };
 		0A0B8D561F1AFA0F00DC8D23 /* MissingChildrenViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B8D551F1AFA0F00DC8D23 /* MissingChildrenViewController+UITableViewDataSource.swift */; };
@@ -41,7 +40,6 @@
 		0A0B8D391F1ABADA00DC8D23 /* GCDBlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
 		0A0B8D451F1AE95D00DC8D23 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		0A0B8D4A1F1AF17900DC8D23 /* MissingChildrenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingChildrenTableViewCell.swift; sourceTree = "<group>"; };
-		0A0B8D4B1F1AF17900DC8D23 /* MissingChildrenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissingChildrenTableViewCell.xib; sourceTree = "<group>"; };
 		0A0B8D4E1F1AF29300DC8D23 /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
 		0A0B8D531F1AF9CE00DC8D23 /* MissingChildrenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissingChildrenViewController.swift; sourceTree = "<group>"; };
 		0A0B8D551F1AFA0F00DC8D23 /* MissingChildrenViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MissingChildrenViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				0A0B8D4A1F1AF17900DC8D23 /* MissingChildrenTableViewCell.swift */,
-				0A0B8D4B1F1AF17900DC8D23 /* MissingChildrenTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,7 +302,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A241C271F19F088001D3F79 /* LaunchScreen.storyboard in Resources */,
-				0A0B8D4D1F1AF17900DC8D23 /* MissingChildrenTableViewCell.xib in Resources */,
 				0A241C241F19F088001D3F79 /* Assets.xcassets in Resources */,
 				0A241C221F19F088001D3F79 /* Main.storyboard in Resources */,
 				0A78FAFD1F1B23BB00D30E22 /* GoogleService-Info.plist in Resources */,

@@ -10,7 +10,6 @@ import Foundation
 import CoreData
 
 struct Photo {
-    
     var photoUrl: String?
     var month: String?
     var year: Int16?
